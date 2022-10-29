@@ -30,7 +30,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-inline: 2.5rem;
-    padding-block: 1.6rem;
+    padding-block: 2.5rem;
     background-color: #fdf2e9;
     width: 100%;
     top: 0;
@@ -93,7 +93,6 @@ header div img {
 
 .home {
     background-color: #fdf2e9;
-    min-height: 100vh;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -967,22 +966,21 @@ select {
     /* HOME */
 
     header {
-        padding-inline: 2rem;
+        padding-inline: 1.3rem;
     }
 
     header div img {
-        width: 100px;
+        width: 128px;
     }
 
     .home {
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
     }
 
     .home-bg {
         flex-direction: column;
-        height: 100vh;
-        justify-content: space-evenly;
-
+        gap: 20px;
+        padding-top: 0;
     }
 
     .home1 {
@@ -1040,6 +1038,12 @@ select {
     .home2 {
         width: 100%;
         margin-top: 2rem;
+    }
+
+    .home2 img {
+        display: block;
+        width: 70%;
+        margin-inline: auto;
     }
 
     /*FEATURED  */
