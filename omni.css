@@ -33,7 +33,6 @@ header {
     padding-block: 1.6rem;
     background-color: #fdf2e9;
     width: 100%;
-    position: fixed;
     top: 0;
     z-index: 2;
 }
@@ -42,30 +41,26 @@ header {
     height: 3px;
     width: 30px;
     background: #333;
-    margin-top: .25rem;
+    margin-bottom: .25rem;
 }
 
 .ham {
     display: none;
 }
 
-header div {
-    width: 30%;
-    height: 100%;
-}
 
 header div img {
-    width: 43%;
+    width: 160px;
 }
 
 .main-nav {
-    width: 54%;
     line-height: 1rem;
 }
 
 .nav-list {
     display: flex;
     justify-content: space-between;
+    gap: 50px;
     color: #333;
     font-weight: 500;
     font-size: 18px;    
@@ -112,11 +107,13 @@ header div img {
 .home-bg {
     display: flex;
     align-items: center;
-    padding-top: 8rem;
+    padding-top: 3.5rem;
+    max-width: 1250px;
+    margin-inline: auto;
 }
 
 .home1 {
-    max-width: 44%;
+    max-width: 50%;
     margin-left: 3rem;
 }
 
@@ -401,8 +398,8 @@ header div img {
 .card1 {
     box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 8%);
     border-radius: 11px;
-    width: 330px;
-    height: 500px;
+    width: 380px;
+    height: 530px;
     overflow: hidden;
     transition: .3s;
 }
@@ -916,23 +913,35 @@ select {
 
 @media screen and (max-width:576px) {
 
+    .main-nav {
+        background: rgba(255, 255, 255, 0.9);
+        display: flex;
+        align-items: center;
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        transform: translateX(100%);
+        transition: .5s ease;
+        backdrop-filter: blur(8px);
+        opacity: 0;
+    }
+
+    .ham :nth-child(2) {
+        transform: translate(0);
+        transition: .25s ease;
+    }
+
     .nav-list {
         flex-direction: column;
         align-items: center;
-        top: 72px;
-        justify-content: space-evenly;
-        position: absolute;
-        background: #fff;
-        backdrop-filter: blur(5px);
-        left: 0;
-        height: 100vh;
+        gap: 50px;
+        font-size: 24px;
         width: 100%;
-        transform: translateX(500px);
-        transition: .5s ease;
     }
 
-    .active .nav-list {
+    .active.main-nav {
         transform: translateX(0);
+        opacity: 1;
     }
 
 
@@ -962,7 +971,7 @@ select {
     }
 
     header div img {
-        width: 100%;
+        width: 100px;
     }
 
     .home {
@@ -1102,17 +1111,23 @@ select {
     .how2-img::before {
         height: 250px;
         width: 250px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .how2-img::after {
         height: 180px;
         width: 180px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .how2-img img {
         height: 18rem;
         top: 8px;
         left: 53px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     /* MEALS */
