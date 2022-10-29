@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omnifood</title>
     <link rel="icon" href="img/favicon.png">
-    <link rel="stylesheet" href="omni.css">
+    <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/b4bc2c9b2b.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -20,7 +20,7 @@
                         <img src="https://omnifood.dev/img/omnifood-logo.png" alt="">
                     </a>
                 </div>
-                <nav class="main-nav">
+                <nav id="navbar" class="main-nav">
                     <ul class="nav-list">
                       <li><a class="nav-link" href="#how">How it works</a></li>
                       <li><a class="nav-link" href="#meals">Meals</a></li>
@@ -29,6 +29,11 @@
                       <li><a class="nav-link nav-btn" href="#subscription">Try for free</a></li>
                     </ul>
                   </nav>
+                  <article id="ham" class="ham">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </article>
             </header>
             <div class="home-bg">
                 <div class="home1">
@@ -72,18 +77,18 @@
         <div class="how-bg" id="how">
             <p>How It Works</p>
             <h3>Your daily dose of health in 3 simple steps</h3>
-            <div class="how1">
-                <div class="how1-para">
+            <div class="how1 ">
+                <div class="how2-desc how1-box">
                     <h1 class="how1-head">01</h1>
                     <h5 class="how1-head2">Tell us what you like (and what not)</h5>
                     <p class="how1-para2">Never again waste time thinking about what to eat! Omnifood AI will create a 100% personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter what diet you follow!</p>
                 </div>
-                <div class="how1-img">            
+                <div class="how2-img how1-imgbox">            
                     <img src="https://omnifood.dev/img/app/app-screen-1.png" alt="">
                 </div>
             </div>
-            <div class="how2">
-                <div class="how2-img">
+            <div class="how2 how2-box">
+                <div class="how2-img how2-imgbox">
                     <img src="https://omnifood.dev/img/app/app-screen-2.png" alt="">
                 </div>
                 <div class="how2-desc">
@@ -92,13 +97,13 @@
                     <p class="how1-para2">Once per week, approve the meal plan generated for you by OmnifoodAI. You can change ingredients, swap entire meals, or even add your own recipes.</p>
                 </div>
             </div>
-            <div class="how1">
-                <div class="how1-para">
+            <div class="how1 how3-box">
+                <div class="how2-desc">
                     <h1 class="how1-head">03</h1>
                     <h5 class="how1-head2">Receive meals at convenient time</h5>
                     <p class="how1-para2">Best chefs in town will cook your selected meal every day, and wewill deliver it to your door whenever works best for you. You can change delivery schedule and address daily!</p>
                 </div>
-                <div class="how1-img">
+                <div class="how2-img how3-imgbox">
                     <img src="https://omnifood.dev/img/app/app-screen-3.png" alt="">
                 </div>
             </div>
@@ -342,7 +347,7 @@
         <div id="subscription">
             <div class="sbs-bg">
                 <div class="sbs-card">
-                    <h3 class="test-heading" style="font-size: 42px;">Get your first meal for free!</h3>
+                    <h3 class="test-heading sbs-head" style="font-size: 42px;">Get your first meal for free!</h3>
                     <p class="sbs-para">Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us!</p>
                         <div class="sbs-card1">
                             <div>
@@ -377,43 +382,50 @@
 
         <footer id="footer">
             <div class="footer-bg">
-                <div class="foot-1">
-                    <img src="https://omnifood.dev/img/omnifood-logo.png" alt="">
-                    <div class="social-icons">
-                        <ion-icon name="logo-instagram"></ion-icon>
-                        <ion-icon name="logo-facebook"></ion-icon>
-                        <ion-icon name="logo-twitter"></ion-icon>
+                <div class="foot-div1">
+                    <div class="foot-1">
+                        <img src="https://omnifood.dev/img/omnifood-logo.png" alt="">
+                        <div class="social-icons">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </div>
+                        <p>Copyright © 2022 by Omnifood, Inc. All rights reserved.</p>
                     </div>
-                    <p>Copyright © 2022 by Omnifood, Inc. All rights reserved.</p>
+                    <div class="foot-1 ">
+                        <h6 class="foot-head">Contact us</h6>
+                        <a href=""><p>623 Harrison St., 2nd Floor, San Francisco, CA 94107</p></a>
+                        <a href=""><p>415-201-6370 <br> hello@omnifood.com</p></a>
+                    </div>
                 </div>
-                <div class="foot-1">
-                    <h6 class="foot-head">Account</h6>
-                    <p>Create Account</p>
-                    <p>Sign in</p>
-                    <p>ios app</p>
-                    <p>Android app</p>
+                <div class="foot-div2">
+                    <div class="foot-1 " >
+                        <h6 class="foot-head">Account</h6>
+                        <p>Create Account</p>
+                        <p>Sign in</p>
+                        <p>ios app</p>
+                        <p>Android app</p>
+                    </div>
+                    <div class="foot-1">
+                        <h6 class="foot-head">Company</h6>
+                        <p>About Omnifood</p>
+                        <p>For Business</p>
+                        <p>Cooking partners</p>
+                        <p>Careers</p>
+                    </div>
+                    <div class="foot-1">
+                        <h6 class="foot-head">Resources</h6>
+                        <p>Recipe directory</p>
+                        <p>Help center</p>
+                        <p>Privacy & terms</p>
+                    </div>
                 </div>
-                <div class="foot-1">
-                    <h6 class="foot-head">Company</h6>
-                    <p>About Omnifood</p>
-                    <p>For Business</p>
-                    <p>Cooking partners</p>
-                    <p>Careers</p>
-                </div>
-                <div class="foot-1">
-                    <h6 class="foot-head">Resources</h6>
-                    <p>Recipe directory</p>
-                    <p>Help center</p>
-                    <p>Privacy & terms</p>
-                </div>
-                <div class="foot-1">
-                    <h6 class="foot-head">Contact us</h6>
-                    <a href=""><p>623 Harrison St., 2nd Floor, San Francisco, CA 94107</p></a>
-                    <a href=""><p>415-201-6370 <br> hello@omnifood.com</p></a>
-                </div>
+               
+                
             </div>
         </footer>
     </div>
+    <script src="index.js"></script>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
